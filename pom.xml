@@ -9,15 +9,15 @@
 
   <groupId>io.github.msobkow.v3_1</groupId>
   <artifactId>io.github.msobkow.v3_1.cfint.cfintjpatest</artifactId>
-  <version>3.1</version>
+  <version>3.1.42</version>
   <name>io.github.msobkow.v3_1.cfint.cfintjpatest</name>
-  <description>msobkow 3.1 CFInt CFInt - JPA Test program to make sure database instantiates</description>
+  <description>msobkow 3.1.42 CFInt CFInt - JPA Test program to make sure database instantiates</description>
   <url>mailto:mark.sobkow@gmail.com</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>17</maven.compiler.source>
-    <maven.compiler.target>17</maven.compiler.target>
+    <maven.compiler.source>21</maven.compiler.source>
+    <maven.compiler.target>21</maven.compiler.target>
     <spring.version>4.0.0</spring.version>
     <orm.version>7.0.2</orm.version>
     <xerces.version>2.12.2</xerces.version>
@@ -98,22 +98,22 @@
     <dependency>
         <groupId>io.github.msobkow.v3_1</groupId>
         <artifactId>io.github.msobkow.v3_1.cfsec.cfsec</artifactId>
-        <version>3.1</version>
+        <version>3.1.42</version>
     </dependency>
     <dependency>
         <groupId>io.github.msobkow.v3_1</groupId>
         <artifactId>io.github.msobkow.v3_1.cfint.cfint</artifactId>
-        <version>3.1</version>
+        <version>3.1.42</version>
     </dependency>
     <dependency>
         <groupId>io.github.msobkow.v3_1</groupId>
         <artifactId>io.github.msobkow.v3_1.cfsec.cfsecjpa</artifactId>
-        <version>3.1</version>
+        <version>3.1.42</version>
     </dependency>
     <dependency>
         <groupId>io.github.msobkow.v3_1</groupId>
         <artifactId>io.github.msobkow.v3_1.cfint.cfintjpa</artifactId>
-        <version>3.1</version>
+        <version>3.1.42</version>
     </dependency>
   </dependencies>
 
@@ -121,12 +121,12 @@
 		<repository>
 			<id>nexus-releases</id>
 			<name>Nexus release repository</name>
-			<url>http://nexus3.msobkow.github.io:8081/repository/markhome.server-hosted/</url>
+			<url>http://nexus3.msobkow.github.io:8081/repository/msobkow.github.io-hosted/</url>
 		</repository>
 		<snapshotRepository>
 			<id>nexus-snapshots</id>
 			<name>Nexus release repository</name>
-			<url>http://nexus3.msobkow.github.io:8081/repository/markhome.server-hosted/</url>
+			<url>http://nexus3.msobkow.github.io:8081/repository/msobkow.github.io-hosted/</url>
 		</snapshotRepository>
 	</distributionManagement>
 
@@ -162,7 +162,7 @@
 				</executions>
 				<configuration>
 					<serverId>nexus</serverId>
-					<nexusUrl>http://nexus3.msobkow.github.io:8081/repository/markhome.server-hosted/</nexusUrl>
+					<nexusUrl>http://nexus3.msobkow.github.io:8081/repository/msobkow.github.io-hosted/</nexusUrl>
 					<skipStaging>true</skipStaging>
 				</configuration>
 			</plugin>
