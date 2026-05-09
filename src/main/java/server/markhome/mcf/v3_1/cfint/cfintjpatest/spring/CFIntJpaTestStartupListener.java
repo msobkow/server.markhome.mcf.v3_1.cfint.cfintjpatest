@@ -87,6 +87,7 @@ public class CFIntJpaTestStartupListener implements ApplicationContextAware {
 
 		ICFSecSchema.getBackingCFSec().wireTableTableInstances();
 		ICFIntSchema.getBackingCFInt().wireTableTableInstances();
+		ICFSecSchema.setSecurityControl(new CFSecJpaSecurityCache());
 
 		ICFIntSchema.getBackingCFInt().bootstrapSchema(ICFIntSchema.getConsolidatedTableInfo());
 
